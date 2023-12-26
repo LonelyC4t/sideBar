@@ -11,9 +11,9 @@
         <header class="sidePanel__header header">
             <div class="header__wrapper">
                 <div class="header__content">
-                    <button class="button header__button--close"></button>
+                    <button class="button button--type--close"></button>
                     <img src="image/logo.svg" alt="лого компании CPS">
-                    <button class="button header__button--search"></button>
+                    <button class="button button--type--search"></button>
                 </div>
             </div>
         </header>
@@ -31,17 +31,29 @@
             <div class="footer__wrapper">
                 <div class="footer__content">
                     <div class="footer__button">
-                        <button class="button footer__button--phone"></button>
-                        <button class="button footer__button--message"></button>
-                        <button class="button footer__button--profile"></button>
+                        <button class="button button--type--phone"></button>
+                        <button class="button button--type--message"></button>
+                        <button class="button button--type--profile"></button>
                     </div>
-                    <div class="footer__mail">mail@cps.com</div>
-                    <div class="footer__number">8 800 890 8900</div>
-                    <div class="footer__button--lang">
-                        <button>RU</button>
-                        <button>EN</button>
-                        <button>CN</button>
-                    </div>
+                    <a class="footer__mail">mail@cps.com</a>
+                    <a class="footer__number">8 800 890 8900</a>
+                    <form class="footer__lang">
+                        <a href="#"> 
+                            <label for="RU">RU
+                                <input id="RU" type="radio" checked></input>
+                            </label>
+                        </a>
+                        <a href="#">
+                            <label for="EN">EN
+                                <input id="EN" type="radio"></input>
+                            </label>
+                        </a>
+                        <a href="#">
+                            <label for="CN">CN
+                                <input id="CN" type="radio"></input>
+                            </label>
+                        </a>
+                    </form>
                 </div>
             </div>
         </footer>

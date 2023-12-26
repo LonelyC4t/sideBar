@@ -66,10 +66,10 @@ body {
     animation-duration: 1.4s;
 }
 
-.header__button--close {
+.button--type--close {
     background:  rgba(255, 62, 121, 1) url("image/close.svg") no-repeat center;
 }
-.header__button--search {
+.button--type--search {
     background:  rgba(255, 62, 121, 1) url("image/search.svg") no-repeat center;
     margin-left: 70px;
 }
@@ -126,15 +126,15 @@ body {
     right: 30px;
 }
 
-.footer__button--phone {
+.button--type--phone {
     background:  rgba(255, 62, 121, 1) url("image/phone.svg") no-repeat center;
     margin-right: 16px;
 }
-.footer__button--message{
+.button--type--message{
     background:  rgba(255, 62, 121, 1) url("image/message.svg") no-repeat center;
     margin-right: 16px;
 }
-.footer__button--profile{
+.button--type--profile{
     background:  rgba(255, 62, 121, 1) url("image/profile.svg") no-repeat center;
     margin-bottom: 16px;
 }
@@ -145,25 +145,33 @@ body {
 }
 
 .footer__mail{
+    display: inline-block;
     font-family: "TT Lakes reg";
     font-size: 16px;
     font-weight: bolder;
     margin-bottom: 12px;
 }
 .footer__number{
+    display: inline-block;
     font-family: "TT Lakes bold";
     font-size: 24px;
     font-weight: 900;
     min-width: 196px;
     margin-bottom: 40px;
 }
-.footer__button--lang button{
-    border: none;
-    background-color: white;
+.footer__lang a {
+    text-decoration: none;
+    color: rgba(27, 28, 33, 1);
     font-family: "TT Lakes reg";
     font-weight: bolder;
-    color: rgba(27, 28, 33, 1);
 }
-.footer__button--lang button:first-child{
-    color: rgba(126, 126, 130, 1);
+.footer__lang input[type=radio]{
+    display: none;
+}
+.footer__lang label {
+    cursor: pointer;
+    margin-right: 7px;
+}
+.footer__lang a:first-child label {
+    color: rgba(126, 126, 130, 1); 
 }
